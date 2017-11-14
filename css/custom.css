@@ -1,0 +1,81 @@
+/*font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Kelly Slab', cursive;*/
+html{
+  background-color: black;
+}
+img.seal {
+  width: 170px;
+  float: left;
+}
+.map img {
+  width: 2000px;
+}
+div.map{
+  position: relative;
+  display: inline-block;
+  top: 90px;
+}
+div.animal{
+  position: absolute;
+}
+h1 {
+  font-family: 'Black Ops One', cursive;
+  color: #109b90;
+  /* padding: 41px; */
+  margin-left: 191px;
+  font-size: 4em;
+}
+div.animal img {
+  width: 100px;
+}
+
+div#col-campbell{
+  top: 379px;
+  left: 515px;
+}
+
+div#seal{
+
+}
+div#master-miller{
+  right: 1605px;
+  top: 429px;
+}
+div#otacon{
+  top: 34%;
+  right: 13%;
+}
+div#gray-fox{
+  top: 46%;
+  right: 46%;
+  z-index: 1;
+}
+div#psycho-mantis{
+  bottom: 63%;
+  left: 64%;
+}
+div#sniper-wolf{
+  top: 35%;
+  right: 43%;
+}
+div#solid-snake{
+  left: 22%;
+  bottom: 50%;
+}
+div#ocelot{
+  top: 17%;
+  right: 40%;
+}
+div#vulcan-raven{
+  left: 6%;
+  top: 21%;
+}
+
+
+header.masthead {
+    position: fixed;
+    z-index: 1;
+    background-color:  black;
+    width: 100%;
+    height: 200px;
+}
