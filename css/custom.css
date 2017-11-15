@@ -1,5 +1,4 @@
-/*font-family: 'Libre Barcode 39 Text', cursive;
-font-family: 'Kelly Slab', cursive;*/
+/*font-family: 'Kelly Slab', cursive;*/
 html{
   background-color: black;
 }
@@ -18,58 +17,106 @@ div.map{
 div.animal{
   position: absolute;
 }
+.animal img:hover{
+  box-shadow: 0px 0px 20px #00feff;
+}
+.animal:after {
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 23px;
+  color: #75ff95a3;
+  display: block;
+  width: 0;
+  overflow: hidden;
+  z-index: 2;
+  letter-spacing: .15em;
+}
 h1 {
   font-family: 'Black Ops One', cursive;
   color: #109b90;
-  /* padding: 41px; */
   margin-left: 191px;
   font-size: 4em;
 }
 div.animal img {
   width: 100px;
+  border-radius: 10px;
+  border: 2px solid rgba(117, 255, 149, 0.7);
 }
 
 div#col-campbell{
   top: 379px;
   left: 515px;
 }
+  div#col-campbell:after {
+    content: "Colonel Campbell";
+  }
 
 div#seal{
-
+  top: 27%;
+  left: 42%;
 }
+  div#seal:after{
+    content: "Siren Seal";
+  }
 div#master-miller{
   right: 1605px;
   top: 429px;
 }
+  div#master-miller:after{
+    content: "Master Miller";
+  }
 div#otacon{
   top: 34%;
   right: 13%;
 }
+  div#otacon:after{
+    content: "otacon";
+  }
 div#gray-fox{
   top: 46%;
   right: 46%;
   z-index: 1;
 }
+  div#gray-fox:after{
+    content: "gray fox";
+  }
 div#psycho-mantis{
   bottom: 63%;
   left: 64%;
 }
+  div#psycho-mantis:after{
+    content: "psycho mantis";
+  }
+
 div#sniper-wolf{
   top: 35%;
   right: 43%;
 }
+  div#sniper-wolf:after{
+    content: "sniper wolf";
+    z-index: 4;
+  }
 div#solid-snake{
   left: 22%;
   bottom: 50%;
+}
+  div#solid-snake:after {
+    content: "Snaaaake";
+    display: block;
 }
 div#ocelot{
   top: 17%;
   right: 40%;
 }
+  div#ocelot:after{
+    content: "revolver ocelot";
+  }
 div#vulcan-raven{
   left: 6%;
   top: 21%;
 }
+  div#vulcan-raven:after{
+    content: "vulcan raven";
+  }
 
 
 header.masthead {
@@ -78,4 +125,29 @@ header.masthead {
     background-color:  black;
     width: 100%;
     height: 200px;
+}
+
+/* SEPTIC TANK */
+.animal:hover:after {
+  width: auto;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(117, 255, 149, 0.7); }
 }
