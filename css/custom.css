@@ -58,7 +58,7 @@ div#seal{
     content: "Siren Seal";
   }
 div#master-miller{
-  right: 1605px;
+  left: 260px;
   top: 429px;
 }
   div#master-miller:after{
@@ -66,21 +66,21 @@ div#master-miller{
   }
 div#otacon{
   top: 34%;
-  right: 13%;
+  left: 78%;
 }
   div#otacon:after{
     content: "otacon";
   }
 div#gray-fox{
   top: 46%;
-  right: 46%;
+  left: 47%;
   z-index: 1;
 }
   div#gray-fox:after{
     content: "gray fox";
   }
 div#psycho-mantis{
-  bottom: 63%;
+  top: 21%;
   left: 64%;
 }
   div#psycho-mantis:after{
@@ -89,7 +89,7 @@ div#psycho-mantis{
 
 div#sniper-wolf{
   top: 35%;
-  right: 43%;
+  left: 53%;
 }
   div#sniper-wolf:after{
     content: "sniper wolf";
@@ -105,7 +105,7 @@ div#solid-snake{
 }
 div#ocelot{
   top: 17%;
-  right: 40%;
+  left: 58%;
 }
   div#ocelot:after{
     content: "revolver ocelot";
